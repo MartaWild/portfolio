@@ -8,20 +8,48 @@ const MainPage = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(26, 101, 147);
 `;
 
 const Content = styled.div`
     flex-grow: 1;
     flex-basis: 1;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 7vw;
+    padding-bottom: 0;
 `;
+
+const Image = styled.img`
+    border-radius: 50%;
+    height: 500px;
+    margin: 30px;
+`;
+
+const MainText = styled.div`
+    font-size: 30px;
+    width: 800px;
+`;
+
+const Paragraph = styled.p`
+    margin: 15px;
+`;
+
 
 export default function Main(){
     return (
         <MainPage>
             <Header />
             <Content>
-                Конь  Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.  Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.  Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. 
+                <Image src="/avatar.jpg" />
+                <MainText>
+                    <Paragraph>Привет, я Мария!</Paragraph>
+                    <Paragraph>Я дизайнер широкого профиля и веб-разработчик. </Paragraph>
+                    <Paragraph>Помогу воплотить в жизнь любую идею.</Paragraph> 
+                </MainText>
             </Content>
             
         </MainPage>

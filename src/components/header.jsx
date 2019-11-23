@@ -13,7 +13,7 @@ const LogoWrapper = styled.div`
 
 const NavMenu = styled.nav`
     display: flex;
-    width: 550px;
+    width: 600px;
     /*width: 30%;*/
     justify-content: space-between;
     margin-right: 100px;
@@ -27,7 +27,7 @@ const HeaderBar = styled.div`
     padding: 10px 0px;
     background-color: rgb(250, 250, 250);
     font-family: 'Lobster', cursive;
-    font-size: 18px;
+    font-size: 22px;
     flex-basis: 0;
     flex-grow: 0;
 `;
@@ -37,6 +37,9 @@ const MenuLink = styled.a`
     color: rgb(26, 101, 147);
     :active {
         color: rgb(26, 101, 147);
+    }
+    :hover{
+        color: rgb(101, 164, 203);
     }
 `;
 
