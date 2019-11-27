@@ -8,7 +8,7 @@ const Image = styled.img`
 `;
 
 const LogoWrapper = styled.div`
-    margin-left: 20px;
+    margin-left: 40px;
 `;
 
 const NavMenu = styled.nav`
@@ -53,8 +53,8 @@ export default function Header(){
             </LogoWrapper>
 
             <NavMenu>
-                <MenuLink href="/"> Веб-разработка </MenuLink>
-                <MenuLink href="/"> Арт и дизайн </MenuLink>
+                <MenuLink href="/web"> Веб-разработка </MenuLink>
+                <MenuLink href="/art"> Арт и дизайн </MenuLink>
                 <MenuLink href="/"> Контакты </MenuLink>
                 <MenuLink href="/"> Eng / Rus </MenuLink>
             </NavMenu>

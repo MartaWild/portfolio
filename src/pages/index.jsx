@@ -1,26 +1,21 @@
 import React from "react";
 import Header from "../components/header";
 import styled from "styled-components";
+import Page from "../components/page";
+
 
 /*CSS*/
-const MainPage = styled.div`
-    background-color: rgb(228, 237, 242);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(26, 101, 147);
+const Content = styled.div`
+    padding: 2vh 7vw;
+    padding-bottom: 0;
 `;
 
-const Content = styled.div`
+const MainInfo = styled.div`
     flex-grow: 1;
     flex-basis: 1;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vh 7vw;
-    padding-bottom: 0;
 `;
 
 const Image = styled.img`
@@ -38,20 +33,37 @@ const Paragraph = styled.p`
     margin: 15px;
 `;
 
+const SubText = styled.div`
+    font-size: 18px;
+    padding: 50px 0;
+`;
 
 export default function Main(){
     return (
-        <MainPage>
+        <Page>
             <Header />
             <Content>
-                <Image src="/avatar.jpg" />
-                <MainText>
-                    <Paragraph>Привет, я Мария!</Paragraph>
-                    <Paragraph>Я дизайнер широкого профиля и веб-разработчик. </Paragraph>
-                    <Paragraph>Помогу воплотить в жизнь любую идею.</Paragraph> 
-                </MainText>
+                <MainInfo>
+                    <Image src="/avatar.jpg" />
+                    <MainText>
+                        <Paragraph>Привет, я Мария!</Paragraph>
+                        <Paragraph>Я дизайнер широкого профиля и веб-разработчик. </Paragraph>
+                        <Paragraph>Помогу наладить контакт между вашим бизнесом и клиентами.</Paragraph> 
+                    </MainText>
+                </MainInfo>
+                <SubText>
+                    <Paragraph> 
+                        Свободно владею слу графическими инструментами, как Adobe Photoshop, Adobe Illustrator, Paint Tool SAI 2.0
+                    </Paragraph>
+                    <Paragraph>
+                        Отлично владею CSS3, HTML5, современным стандартом JavaScript, а также библиотеками ReactJS, styled-components и многими другими.
+                    </Paragraph>
+                    <Paragraph>
+                        Также имею опыт работы с TypeScript, RxJS, Semantic UI и другими технологиями.
+                    </Paragraph>
+                </SubText>
             </Content>
-            
-        </MainPage>
+
+        </Page>
     )
 }
