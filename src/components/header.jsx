@@ -55,7 +55,8 @@ export default function Header(){
             <NavMenu>
                 <MenuLink href="/web"> Веб-разработка </MenuLink>
                 <MenuLink href="/art"> Арт и дизайн </MenuLink>
-                <MenuLink href="/"> Контакты </MenuLink>
+                <MenuLink href="/contacts"> Контакты </MenuLink>
+                <MenuLink href="/"> О себе </MenuLink>
                 <MenuLink href="/"> Eng / Rus </MenuLink>
             </NavMenu>
 

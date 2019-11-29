@@ -6,7 +6,6 @@ import Content from "../components/content";
 import Section from "../components/section";
 import Description from "../components/description"
 
-
 /*CSS*/
 
 const TestImg = styled.div`

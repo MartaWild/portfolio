@@ -16,6 +16,7 @@ const MainInfo = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: calc(100vh - 52px);
 `;
 
 const Image = styled.img`
