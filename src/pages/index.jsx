@@ -52,17 +52,7 @@ export default function Main(){
                         <Paragraph>Помогу наладить контакт между вашим бизнесом и клиентами.</Paragraph> 
                     </MainText>
                 </MainInfo>
-                <SubText>
-                    <Paragraph> 
-                        Свободно владею слу графическими инструментами, как Adobe Photoshop, Adobe Illustrator, Paint Tool SAI 2.0
-                    </Paragraph>
-                    <Paragraph>
-                        Отлично владею CSS3, HTML5, современным стандартом JavaScript, а также библиотеками ReactJS, styled-components и многими другими.
-                    </Paragraph>
-                    <Paragraph>
-                        Также имею опыт работы с TypeScript, RxJS, Semantic UI и другими технологиями.
-                    </Paragraph>
-                </SubText>
+
             </Content>
 
         </Page>
