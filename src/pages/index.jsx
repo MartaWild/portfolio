@@ -34,10 +34,10 @@ const Paragraph = styled.p`
     margin: 15px;
 `;
 
-const SubText = styled.div`
+/*const SubText = styled.div`
     font-size: 18px;
     padding: 50px 0;
-`;
+`;*/
 
 export default function Main(){
     return (
