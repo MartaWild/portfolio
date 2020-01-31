@@ -22,37 +22,37 @@ export default function Art() {
                 <Section>
                     <TestImg />
                     <Description>
-                        Описание проекта  Описание проекта Описание проекта Описание проекта Описание проекта
+                        Лого для Юльки Описание проекта  Описание проекта Описание проекта Описание проекта Описание проекта
                     </Description>
                 </Section>
                 <Section>
                     <TestImg />
                     <Description>
-                        Описание проекта  Описание проекта Описание проекта
+                        Лого для Техком-Логистик Описание проекта  Описание проекта Описание проекта
                     </Description>
                 </Section>
                 <Section>
                     <TestImg />
                     <Description>
-                        Описание проекта 
+                       Задник для игры Описание проекта 
                     </Description>
                 </Section>
                 <Section>
                     <TestImg />
                     <Description>
-                        Описание проекта 
+                      Птичка  Описание проекта 
                     </Description>
                 </Section>
                 <Section>
                     <TestImg />
                     <Description>
-                        Описание проекта 
+                       Рыбка Описание проекта 
                     </Description>
                 </Section>
                 <Section>
                     <TestImg />
                     <Description>
-                        Описание проекта 
+                        Ривза Описание проекта 
                     </Description>
                 </Section>
             </Content>            
