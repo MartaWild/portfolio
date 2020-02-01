@@ -20,6 +20,19 @@ const TestImg = styled.div`
     height: 200px;
 `;
 
+const Image = styled.img`
+    height: 200px;
+    margin: 10px;
+    margin-right: 30px;
+`;
+
+const projects = [
+    { image: "/techcom.jpg", description: "Разработка сайта для логистической компании (верстка, frontend, дизайн, логотип). Использованные технологии: JavaScript, React, Next.js, БЭМ" },
+    { image: "/tabel.jpg" , description: "Работа над системой учета рабочего времени для строительных компаний: работа над фронтэндом и версткой, правка багов. Использованные технологии: JavaScript, React, Rx.js" },
+    { image: "/water.jpg", description: "Веб-приложение, рассчитывающее суточное потребление воды в соответствии с весом, с возможностью отслеживать уже выпитое количество и браузерными напоминаниями (верстка, frontend, дизайн). Использованные технологии: JavaScript, React", url: "https://water-check.herokuapp.com/" },
+    { image: "/date.jpg",  description: "Тундер" }
+]
+
 export default function Web() {
     const [urlImage, setUrl] = React.useState(null);
 
@@ -30,38 +43,25 @@ export default function Web() {
                 <Paragraph>
                 Отлично владею CSS3, HTML5, современным стандартом JavaScript, а также библиотеками ReactJS, styled-components и многими другими.
                 </Paragraph>
-                <Section>
-                    <TestImg onClick={() => setUrl('https://i.imgur.com/kftuyZf.jpg')}/>
 
-                    <Description>
-                        Техком-Логистик Описание проекта  Описание проекта Описание проекта Описание проекта Описание проекта
-                    </Description>
-                </Section>
-                <Section>
-                    <TestImg onClick={() => setUrl('https://i.imgur.com/1suKT5N.png')}/>
-                    <Description>
-                        Табель учета рабочего времени компании Описание проекта  Описание проекта Описание проекта
-                    </Description>
-                </Section>
-                <Section>
-                    <TestImg />
-                    <Description>
-                        Трекер потребления воды за сутки Описание проекта 
-                    </Description>
-                </Section>
-                <Section>
-                    <TestImg />
-                    <Description>
-                        Тудер Описание проекта 
-                    </Description>
-                </Section>
-                
+                {
+                    projects.map(project => (
+                        <Section>
+                            <Image src={project.image} onClick={() => setUrl(project.image)} />
+                            <Description>
+                                {project.description} <br />
+                                {project.url}
+                            </Description>
+                        </Section>
+                    ))
+                }
+
             </Content>  
             {(urlImage !== null) && (
                 <Lightbox
                     mainSrc={urlImage}
-                     onCloseRequest={() => setUrl(null)}
-                
+                    onCloseRequest={() => setUrl(null)}
+                    imagePadding={50}
                 />
             )}          
         </Page>
