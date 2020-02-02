@@ -18,10 +18,14 @@ const NavMenu = styled.nav`
     justify-content: space-between;
     margin-right: 100px;
     align-items: center;
+    @media screen and (max-width: 1180px) {
+          margin-right: 10px;
+    }   
 
 `;
 
 const HeaderBar = styled.div`
+    height: 67px;
     display: flex;
     justify-content: space-between;
     padding: 10px 0px;
@@ -30,6 +34,8 @@ const HeaderBar = styled.div`
     font-size: 22px;
     flex-basis: 0;
     flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
 `;
 
 const MenuLink = styled.a`

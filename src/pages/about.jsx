@@ -39,11 +39,14 @@ export default function Main(){
                 <Paragraph>
                     Также имею опыт работы с TypeScript, RxJS, Semantic UI и другими технологиями.
                 </Paragraph>
+                <Paragraph>
+                    Родной язык - русский. Свободно владею английским.
+                </Paragraph>
                 <SubTitle>
                     Как со мной лучше связаться
                 </SubTitle>
                 <Paragraph>
-                Сейчас я живу в России, работаю удалённо. Связаться можно по e-mail: TESTTEST@TEST
+                    Сейчас я живу в России, работаю удалённо. Связаться можно по e-mail: TESTTEST@TEST
                 </Paragraph>
                 <SubTitle>
                     Где ещё меня можно найти
