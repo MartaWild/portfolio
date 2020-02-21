@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Menu } from "./menu";
 
 /*CSS*/
 
@@ -50,6 +51,7 @@ const MenuLink = styled.a`
 `;
 
 export default function Header(){
+    const [menuOpen, setMenuOpen] = React.useState(false);
     return (
         <HeaderBar>
             <LogoWrapper>
@@ -57,7 +59,7 @@ export default function Header(){
                     <Image src="/icon.png" />
                 </a>
             </LogoWrapper>
-
+            <Menu open={menuOpen} onSetOpen={setMenuOpen} />
             <NavMenu>
                 <MenuLink href="/web"> Веб-разработка </MenuLink>
                 <MenuLink href="/art"> Арт и дизайн </MenuLink>

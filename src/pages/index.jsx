@@ -18,6 +18,12 @@ const Content = styled.div`
         padding-left: 5vw; 
     } 
 
+    @media screen and (max-width: 500px) {
+        padding-right: 0vw;
+        padding-bottom: 0; 
+        padding-left: 2vw; 
+    }  
+
 `;
 
 const MainInfo = styled.div`
@@ -38,6 +44,10 @@ const Image = styled.img`
     height: 500px;
     margin-top: 50px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 500px) {
+        height: 300px;
+    }   
 `;
 
 const MainText = styled.div`
@@ -49,6 +59,9 @@ const MainText = styled.div`
         height: auto;
         width: auto;
     } 
+    @media screen and (max-width: 500px) {
+        font-size: 18px;
+    }  
 `;
 
 const Paragraph = styled.p`
