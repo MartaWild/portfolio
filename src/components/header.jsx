@@ -10,6 +10,9 @@ const Image = styled.img`
 
 const LogoWrapper = styled.div`
     margin-left: 40px;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }  
 `;
 
 const NavMenu = styled.nav`
@@ -22,6 +25,10 @@ const NavMenu = styled.nav`
     @media screen and (max-width: 1180px) {
           margin-right: 10px;
     }   
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }  
 
 `;
 
@@ -37,6 +44,9 @@ const HeaderBar = styled.div`
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
+    @media screen and (max-width: 800px) {
+        position: relative;
+    }  
 `;
 
 const MenuLink = styled.a`
@@ -52,6 +62,7 @@ const MenuLink = styled.a`
 
 export default function Header(){
     const [menuOpen, setMenuOpen] = React.useState(false);
+
     return (
         <HeaderBar>
             <LogoWrapper>

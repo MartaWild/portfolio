@@ -2,7 +2,6 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 const BurgerContainer = styled.div`
-    padding: 15px 15px;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;

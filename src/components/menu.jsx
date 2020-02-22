@@ -55,13 +55,16 @@ const MenuOverlay = styled.div`
 `;
 
 const MenuButton = styled.div`
-	position: fixed;
-	bottom: 3.5%;
+	position: absolute;
+	/*top: 1%;*/
 	left: 23px;
+    top: 20px;
 	width: ${props => props.theme.sidePadding};
 	height: auto;
 	z-index: 30;
-	transform: translate(0, 50%);
+	@media screen and (min-width: 800px) {
+        display: none;
+    }  
 `;
 
 export const Menu = (props) => {
