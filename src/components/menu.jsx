@@ -7,7 +7,7 @@ const MenuPanel = styled.div`
     left: 0;
     top: 0;
     z-index: 20;
-    width: 30vw;
+    width: 200px;
     height: 100%;
     background: white;
     overflow: auto;
@@ -22,12 +22,13 @@ const MenuPanel = styled.div`
 const MenuContent = styled.div`
     opacity: ${props => props.active ? 1 : 0};
     transition: opacity 0.4s ease-in-out;
+    padding-top: 50px;
 `;
 
 const MenuItem = styled.a`
     display: block;
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 16px;
     font-weight: ${props => props.active ? 'bold' : 'normal'};
     cursor: pointer;
@@ -75,11 +76,20 @@ export const Menu = (props) => {
             <MenuOverlay visible={open} onClick={() => { onSetOpen(false) }} />
             <MenuPanel active={open}>
                 <MenuContent active={open}>
-                    <MenuItem href="#" active>
-                        Поу
+                    <MenuItem href="/web">
+                        Веб-разработка
                     </MenuItem>
-                    <MenuItem href="#">
-                        Пиу
+                    <MenuItem href="/art">
+                        Арт и дизайн
+                    </MenuItem>
+                    <MenuItem href="/about">
+                        О себе 
+                    </MenuItem>
+                    <MenuItem href="/"> 
+                        Eng / Rus 
+                    </MenuItem>
+                    <MenuItem href="/">
+                        Главная
                     </MenuItem>
                 </MenuContent>
             </MenuPanel>

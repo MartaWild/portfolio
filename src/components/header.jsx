@@ -11,7 +11,7 @@ const Image = styled.img`
 const LogoWrapper = styled.div`
     margin-left: 40px;
     @media screen and (max-width: 800px) {
-        display: none;
+        margin-right:20px;
     }  
 `;
 
@@ -46,6 +46,7 @@ const HeaderBar = styled.div`
     flex-basis: auto;
     @media screen and (max-width: 800px) {
         position: relative;
+        justify-content: flex-end;
     }  
 `;
 
@@ -65,12 +66,12 @@ export default function Header(){
 
     return (
         <HeaderBar>
+            <Menu open={menuOpen} onSetOpen={setMenuOpen} />
             <LogoWrapper>
                 <a href="/">
                     <Image src="/icon.png" />
                 </a>
             </LogoWrapper>
-            <Menu open={menuOpen} onSetOpen={setMenuOpen} />
             <NavMenu>
                 <MenuLink href="/web"> Веб-разработка </MenuLink>
                 <MenuLink href="/art"> Арт и дизайн </MenuLink>

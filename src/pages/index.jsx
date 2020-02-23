@@ -61,6 +61,7 @@ const MainText = styled.div`
     } 
     @media screen and (max-width: 500px) {
         font-size: 18px;
+        margin-left: 20px;
     }  
 `;
 

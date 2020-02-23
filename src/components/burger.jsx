@@ -34,7 +34,7 @@ const BurgerInner = styled.div`
     &, &::before, &::after {
         width: 40px;
         height: 4px;
-        background-color: rgb(41, 67, 97);
+        background-color: rgb(26, 101, 147);
         border-radius: 4px;
         position: absolute;
         transition-property: transform;
@@ -62,7 +62,7 @@ const BurgerInner = styled.div`
         transition-delay: 0.12s;
         transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         &, &::before, &::after {
-            background-color: rgb(41, 67, 97);
+            background-color: rgb(26, 101, 147);
         }
         &::before {
             top: 0;
