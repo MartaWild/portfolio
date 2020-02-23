@@ -19,6 +19,13 @@ const Image = styled.img`
     object-fit: contain;
     margin: 10px;
     margin-right: 30px;
+    @media screen and (max-width: 900px) {
+        height: 100px;
+        margin-right: 0px;
+        margin: 5px;
+        margin-top: 20px;
+
+    }  
 `;
 
 const projects = [

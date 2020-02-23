@@ -20,6 +20,9 @@ const Image = styled.img`
     object-fit: contain;
     margin: 10px;
     margin-right: 30px;
+    @media screen and (max-width: 900px) {
+        width: 200px;
+    }  
 `;
 
 const projects = [
