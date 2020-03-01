@@ -13,6 +13,13 @@ const Paragraph = styled.p`
     padding: 10vh 0;
 `;
 
+const Text = styled.p`
+    margin-bottom: 15px;
+    margin-top: 0;
+
+
+`;
+
 const Image = styled.img`
     height: 200px;
     width: 400px;
@@ -29,10 +36,11 @@ const Image = styled.img`
 `;
 
 const projects = [
-    { image: "/techcom.jpg", description: "Разработка сайта для логистической компании (верстка, frontend, дизайн, логотип). Использованные технологии: JavaScript, React, Next.js, БЭМ" },
-    { image: "/tabel.jpg" , description: "Работа над системой учета рабочего времени для строительных компаний: работа над фронтэндом и версткой, правка багов. Использованные технологии: JavaScript, React, Rx.js" },
-    { image: "/water.jpg", description: "Веб-приложение, рассчитывающее суточное потребление воды в соответствии с весом, с возможностью отслеживать уже выпитое количество и браузерными напоминаниями (верстка, frontend, дизайн). Использованные технологии: JavaScript, React", url: "https://water-check.herokuapp.com/" },
-    { image: "/date.jpg",  description: "Тундер" }
+    { image: "/techcom.jpg", description: "Этот сайт-портфолио", tech: "Технологии: JavaScript, React, Gatsby"},
+    { image: "/techcom.jpg", description: "Разработка сайта для логистической компании (верстка, frontend, дизайн, логотип)" , tech: "Технологии: JavaScript, React, Next.js, БЭМ"},
+    { image: "/tabel.jpg" , description: "Работа над системой учета рабочего времени для строительных компаний: работа над фронтэндом и версткой, правка багов", tech: "Технологии: JavaScript, React, Rx.js" },
+    { image: "/water.jpg", description: "Веб-приложение, рассчитывающее суточное потребление воды в соответствии с весом, с возможностью отслеживать уже выпитое количество и браузерными напоминаниями (верстка, frontend, дизайн)", tech: "Технологии: JavaScript, React", url: "https://water-check.herokuapp.com/" },
+    { image: "/date.jpg",  description: <>Сервис-пародия на Tinder со случайной генерацией профилей. Для фотографий использовались изображения с <a href="https://thispersondoesnotexist.com">ThisPersionDoesNotExist</a>. </>, tech: "Технологии: JavaScript, React, Chance"}
 ]
 
 export default function Web() {
@@ -51,8 +59,16 @@ export default function Web() {
                         <Section>
                             <Image src={project.image} onClick={() => setUrl(project.image)} />
                             <Description>
-                                {project.description} <br />
-                                {project.url}
+                                <Text>
+                                    {project.description} <br />
+                                </Text> 
+                                <Text>
+                                    {project.tech}
+                                </Text> 
+                                <a href={project.url}> 
+                                    {project.url}
+                                </a>
+                                
                             </Description>
                         </Section>
                     ))

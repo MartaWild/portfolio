@@ -44,6 +44,11 @@ const HeaderBar = styled.div`
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
+
+    -webkit-box-shadow: 0px -19px 61px 53px rgba(2,54,122,0.1);
+    -moz-box-shadow: 0px -19px 61px 53px rgba(2,54,122,0.1);
+    box-shadow: 0px -19px 61px 53px rgba(2,54,122,0.1);
+    
     @media screen and (max-width: 800px) {
         position: relative;
         justify-content: flex-end;

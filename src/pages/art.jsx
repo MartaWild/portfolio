@@ -26,17 +26,17 @@ const Image = styled.img`
 `;
 
 const projects = [
-    { image: "/logosoap.jpg", description: "Разработка сайта для логистической компании (верстка, frontend, дизайн, логотип). Использованные технологии: JavaScript, React, Next.js, БЭМ" },
-    { image: "/logo.png" , description: "Работа над системой учета рабочего времени для строительных компаний: работа над фронтэндом и версткой, правка багов. Использованные технологии: JavaScript, React, Rx.js" },
-    { image: "/oct.jpg" , description: "Работа над системой учета рабочего времени для строительных компаний: работа над фронтэндом и версткой, правка багов. Использованные технологии: JavaScript, React, Rx.js" },
-    { image: "/backgr.jpg", description: "Веб-приложение, рассчитывающее суточное потребление воды в соответствии с весом, с возможностью отслеживать уже выпитое количество и браузерными напоминаниями (верстка, frontend, дизайн). Использованные технологии: JavaScript, React", url: "https://water-check.herokuapp.com/" },
-    { image: "/reeves.jpg", description: "Веб-приложение, рассчитывающее суточное потребление воды в соответствии с весом, с возможностью отслеживать уже выпитое количество и браузерными напоминаниями (верстка, frontend, дизайн). Использованные технологии: JavaScript, React", url: "https://water-check.herokuapp.com/" },
-    { image: "/bullfinch.jpg",  description: "Тундер" },
-    { image: "/cardinal.jpg",  description: "Тундер" },
-    { image: "/fish.jpg",  description: "Тундер" },
-    { image: "/field.jpg",  description: "Тундер" },
-    { image: "/sprite.jpg",  description: "Тундер" },
-    { image: "/dwrf.jpg",  description: "Тундер" }
+    { image: "/logosoap.jpg", description: "Логотип для магазина декоративного мыла" },
+    { image: "/logo.png" , description: "Лого для сайта транспортной компании" },
+    { image: "/oct.jpg" , description: "Иллюстрация" },
+    { image: "/backgr.jpg", description: "Задний фон для игры" },
+    { image: "/reeves.jpg", description: "Портрет Киану" },
+    { image: "/bullfinch.jpg",  description: "Иллюстрация" },
+    { image: "/cardinal.jpg",  description: "Иллюстрация" },
+    { image: "/fish.jpg",  description: "Иллюстрация" },
+    { image: "/field.jpg",  description: "Иллюстрация" },
+    { image: "/sprite.jpg",  description: "Спрайты для игры" },
+    { image: "/dwrf.jpg",  description: "Спрайт для игры" }
 ]
 
 export default function Art() {
@@ -54,8 +54,7 @@ export default function Art() {
                         <Section>
                             <Image src={project.image} onClick={() => setUrl(project.image)} />
                             <Description>
-                                {project.description} <br />
-                                {project.url}
+                                {project.description} 
                             </Description>
                         </Section>
                     ))
