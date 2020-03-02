@@ -22,12 +22,12 @@ const Text = styled.p`
 
 const Image = styled.img`
     height: 200px;
-    width: 400px;
     object-fit: contain;
     margin: 10px;
     margin-right: 30px;
     @media screen and (max-width: 900px) {
         height: 100px;
+       
         margin-right: 0px;
         margin: 5px;
         margin-top: 20px;

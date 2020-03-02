@@ -46,7 +46,7 @@ const MenuOverlay = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(2, 54, 122, 0.2);
     opacity: ${props => props.visible ? 1 : 0};
     visibility: ${props => props.visible ? 'visible' : 'hidden'};
     transition: ${props => props.visible
@@ -76,6 +76,9 @@ export const Menu = (props) => {
             <MenuOverlay visible={open} onClick={() => { onSetOpen(false) }} />
             <MenuPanel active={open}>
                 <MenuContent active={open}>
+                    <MenuItem href="/">
+                        Главная
+                    </MenuItem>
                     <MenuItem href="/web">
                         Веб-разработка
                     </MenuItem>
@@ -87,10 +90,7 @@ export const Menu = (props) => {
                     </MenuItem>
                     <MenuItem href="/"> 
                         Eng / Rus 
-                    </MenuItem>
-                    <MenuItem href="/">
-                        Главная
-                    </MenuItem>
+                    </MenuItem>                    
                 </MenuContent>
             </MenuPanel>
             <MenuButton>

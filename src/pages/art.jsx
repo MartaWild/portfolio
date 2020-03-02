@@ -16,7 +16,6 @@ const Paragraph = styled.p`
 
 const Image = styled.img`
     height: 200px;
-    width: 200px;
     object-fit: contain;
     margin: 10px;
     margin-right: 30px;
