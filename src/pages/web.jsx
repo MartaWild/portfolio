@@ -7,6 +7,7 @@ import Section from "../components/section";
 import Description from "../components/description";
 import Lightbox from 'react-image-lightbox';
 
+
 const Paragraph = styled.p`
     margin: 15px;
     width: 65%;
@@ -16,8 +17,6 @@ const Paragraph = styled.p`
 const Text = styled.p`
     margin-bottom: 15px;
     margin-top: 0;
-
-
 `;
 
 const Image = styled.img`
