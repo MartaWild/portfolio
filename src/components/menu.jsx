@@ -22,13 +22,14 @@ const MenuPanel = styled.div`
 const MenuContent = styled.div`
     opacity: ${props => props.active ? 1 : 0};
     transition: opacity 0.4s ease-in-out;
-    padding-top: 50px;
+    padding-top: 65px;
+    padding-left: 10px;
 `;
 
 const MenuItem = styled.a`
     display: block;
     width: 100%;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px 16px;
     font-weight: ${props => props.active ? 'bold' : 'normal'};
     cursor: pointer;

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/header";
-import styled, { keyframes, css }  from "styled-components";
+import styled, { keyframes }  from "styled-components";
 import Page from "../components/page";
 import Title from "../components/title";
 import SubTitle from "../components/subtitle";
@@ -26,6 +26,7 @@ const Content = styled.div`
     margin-top: 5%;
     padding: 0 5%;
     margin-bottom: 5%;
+    overflow: hidden;
 `;
 
 const Section = styled.section`

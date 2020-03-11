@@ -26,7 +26,6 @@ const Image = styled.img`
     margin-right: 30px;
     @media screen and (max-width: 900px) {
         height: 100px;
-       
         margin-right: 0px;
         margin: 5px;
         margin-top: 20px;
@@ -35,7 +34,7 @@ const Image = styled.img`
 `;
 
 const projects = [
-    { image: "/techcom.jpg", description: "Этот сайт-портфолио", tech: "Технологии: JavaScript, React, Gatsby"},
+    { image: "/portfolio.jpg", description: "Этот сайт-портфолио", tech: "Технологии: JavaScript, React, Gatsby"},
     { image: "/techcom.jpg", description: "Разработка сайта для логистической компании (верстка, frontend, дизайн, логотип)" , tech: "Технологии: JavaScript, React, Next.js, БЭМ"},
     { image: "/tabel.jpg" , description: "Работа над системой учета рабочего времени для строительных компаний: работа над фронтэндом и версткой, правка багов", tech: "Технологии: JavaScript, React, Rx.js" },
     { image: "/water.jpg", description: "Веб-приложение, рассчитывающее суточное потребление воды в соответствии с весом, с возможностью отслеживать уже выпитое количество и браузерными напоминаниями (верстка, frontend, дизайн)", tech: "Технологии: JavaScript, React", url: "https://water-check.herokuapp.com/" },
