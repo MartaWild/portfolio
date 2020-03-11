@@ -66,8 +66,9 @@ const MenuLink = styled.a`
     }
 `;
 
-export default function Header(){
+export default function Header(props){
     const [menuOpen, setMenuOpen] = React.useState(false);
+    const { translate, changeLocale } = props;
 
     return (
         <HeaderBar>
@@ -81,7 +82,7 @@ export default function Header(){
                 <MenuLink href="/web"> Веб-разработка </MenuLink>
                 <MenuLink href="/art"> Арт и дизайн </MenuLink>
                 <MenuLink href="/about"> О себе </MenuLink>
-                <MenuLink href="/"> Eng / Rus </MenuLink>
+                <MenuLink href="#" onClick={() => changeLocale()}> Eng / Rus </MenuLink>
             </NavMenu>
 
         </HeaderBar>

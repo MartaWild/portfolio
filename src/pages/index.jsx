@@ -3,6 +3,7 @@ import Header from "../components/header";
 import styled, { keyframes } from "styled-components";
 import Page from "../components/page";
 import { useEffect } from "react";
+import useLocale from "../hooks/use-locale"
 
 /*CSS*/
 const slideLeft = keyframes`
@@ -107,9 +108,9 @@ const Wrapper = styled.div`
     padding: 50px 0;
 `;*/
 
-
-
 export default function Main(){
+    const [translate, locale, changeLocale] = useLocale();
+
     const [loaded, setLoaded] = React.useState(false);
     useEffect(() =>{
         const image = new Image();
@@ -129,12 +130,12 @@ export default function Main(){
     return (
         <Page>
             <Wrapper>
-                <Header />
+                <Header translate={translate} changeLocale={changeLocale}/>
                 <Content>
                     <MainInfo>
                         <Photo src="/avatar2.jpg" />
                         <MainText>
-                            <Paragraph>Привет, я Мария!</Paragraph>
+                            <Paragraph> {translate('hello')}, я Мария!</Paragraph>
                             <Paragraph>Я дизайнер широкого профиля и веб-разработчик. </Paragraph>
                             <Paragraph>Помогу наладить контакт между вашим бизнесом и клиентами.</Paragraph> 
                         </MainText>
