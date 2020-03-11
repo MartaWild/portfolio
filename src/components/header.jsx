@@ -79,7 +79,7 @@ export default function Header(props){
                 </a>
             </LogoWrapper>
             <NavMenu>
-                <MenuLink href="/web"> Веб-разработка </MenuLink>
+                <MenuLink href="/web"> {translate('header.item1')} </MenuLink>
                 <MenuLink href="/art"> Арт и дизайн </MenuLink>
                 <MenuLink href="/about"> О себе </MenuLink>
                 <MenuLink href="#" onClick={() => changeLocale()}> Eng / Rus </MenuLink>

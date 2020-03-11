@@ -135,9 +135,9 @@ export default function Main(){
                     <MainInfo>
                         <Photo src="/avatar2.jpg" />
                         <MainText>
-                            <Paragraph> {translate('hello')}, я Мария!</Paragraph>
-                            <Paragraph>Я дизайнер широкого профиля и веб-разработчик. </Paragraph>
-                            <Paragraph>Помогу наладить контакт между вашим бизнесом и клиентами.</Paragraph> 
+                            <Paragraph> {translate('main.hello')}</Paragraph>
+                            <Paragraph> {translate('main.first')} </Paragraph>
+                            <Paragraph> {translate('main.second')} </Paragraph> 
                         </MainText>
                     </MainInfo>
                 </Content>

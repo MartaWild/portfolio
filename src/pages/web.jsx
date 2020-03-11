@@ -6,6 +6,7 @@ import Content from "../components/content";
 import Section from "../components/section";
 import Description from "../components/description";
 import Lightbox from 'react-image-lightbox';
+import useLocale from "../hooks/use-locale"
 
 
 const Paragraph = styled.p`
@@ -33,20 +34,25 @@ const Image = styled.img`
     }  
 `;
 
-const projects = [
-    { image: "/portfolio.jpg", description: "Этот сайт-портфолио", tech: "Технологии: JavaScript, React, Gatsby"},
-    { image: "/techcom.jpg", description: "Разработка сайта для логистической компании (верстка, frontend, дизайн, логотип)" , tech: "Технологии: JavaScript, React, Next.js, БЭМ"},
-    { image: "/tabel.jpg" , description: "Работа над системой учета рабочего времени для строительных компаний: работа над фронтэндом и версткой, правка багов", tech: "Технологии: JavaScript, React, Rx.js" },
-    { image: "/water.jpg", description: "Веб-приложение, рассчитывающее суточное потребление воды в соответствии с весом, с возможностью отслеживать уже выпитое количество и браузерными напоминаниями (верстка, frontend, дизайн)", tech: "Технологии: JavaScript, React", url: "https://water-check.herokuapp.com/" },
-    { image: "/date.jpg",  description: <>Сервис-пародия на Tinder со случайной генерацией профилей. Для фотографий использовались изображения с <a href="https://thispersondoesnotexist.com">ThisPersionDoesNotExist</a>. </>, tech: "Технологии: JavaScript, React, Chance"}
-]
 
 export default function Web() {
+    const [translate, locale, changeLocale] = useLocale();
     const [urlImage, setUrl] = React.useState(null);
+
+    const projects = [
+        { image: "/portfolio.jpg", description: translate('portfolio.description'), tech: translate('portfolio.tech')},
+        { image: "/techcom.jpg", description: translate('techcom.description') , tech:  translate('techcom.tech')},
+        { image: "/tabel.jpg" , description: translate('tabel.description'), tech: translate('tabel.tech')},
+        { image: "/water.jpg", description: translate('water.description' ), tech: translate('water.tech' ), url: "https://water-check.herokuapp.com/" },
+        { image: "/date.jpg",  description: <> {translate('date.descrition')} <a href="https://thispersondoesnotexist.com">ThisPersionDoesNotExist</a>. </>, tech: translate('date.tech')}
+    ]
+
+    
+    
 
     return (
         <Page>
-            <Header />
+            <Header translate={translate} changeLocale={changeLocale} />
             <Content>
                 <Paragraph>
                 Отлично владею CSS3, HTML5, современным стандартом JavaScript, а также библиотеками ReactJS, styled-components и многими другими.
