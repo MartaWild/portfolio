@@ -6,8 +6,7 @@ import Content from "../components/content";
 import Section from "../components/section";
 import Description from "../components/description";
 import Lightbox from 'react-image-lightbox';
-import useLocale from "../hooks/use-locale"
-
+import useLocale from "../hooks/use-locale";
 
 const Paragraph = styled.p`
     margin: 15px;
@@ -34,7 +33,6 @@ const Image = styled.img`
     }  
 `;
 
-
 export default function Web() {
     const [translate, locale, changeLocale] = useLocale();
     const [urlImage, setUrl] = React.useState(null);
@@ -47,15 +45,12 @@ export default function Web() {
         { image: "/date.jpg",  description: <> {translate('date.descrition')} <a href="https://thispersondoesnotexist.com">ThisPersionDoesNotExist</a>. </>, tech: translate('date.tech')}
     ]
 
-    
-    
-
     return (
         <Page>
             <Header translate={translate} changeLocale={changeLocale} />
             <Content>
                 <Paragraph>
-                Отлично владею CSS3, HTML5, современным стандартом JavaScript, а также библиотеками ReactJS, styled-components и многими другими.
+                {translate('web.header')}
                 </Paragraph>
 
                 {

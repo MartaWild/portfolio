@@ -6,6 +6,7 @@ import Content from "../components/content";
 import Section from "../components/section";
 import Description from "../components/description"
 import Lightbox from 'react-image-lightbox';
+import useLocale from "../hooks/use-locale";
 
 /*CSS*/
 const Paragraph = styled.p`
@@ -24,36 +25,37 @@ const Image = styled.img`
     }  
 `;
 
-const projects = [
-    { image: "/logosoap.jpg", description: "Логотип для магазина декоративного мыла" },
-    { image: "/logo.png" , description: "Лого для сайта транспортной компании" },
-    { image: "/oct.jpg" , description: "Иллюстрация" },
-    { image: "/backgr.jpg", description: "Задний фон для игры" },
-    { image: "/reeves.jpg", description: "Портрет Киану" },
-    { image: "/bullfinch.jpg",  description: "Иллюстрация" },
-    { image: "/cardinal.jpg",  description: "Иллюстрация" },
-    { image: "/fish.jpg",  description: "Иллюстрация" },
-    { image: "/field.jpg",  description: "Иллюстрация" },
-    { image: "/sprite.jpg",  description: "Спрайты для игры" },
-    { image: "/dwrf.jpg",  description: "Спрайт для игры" }
-]
-
 export default function Art() {
+    const [translate, locale, changeLocale] = useLocale();
     const [urlImage, setUrl] = React.useState(null);
+
+    const projects = [
+        { image: "/logosoap.jpg", description: 'art.soap' },
+        { image: "/logo.png" , description: 'art.logo' },
+        { image: "/oct.jpg" , description: 'art.illustration' },
+        { image: "/backgr.jpg", description: 'art.background' },
+        { image: "/reeves.jpg", description: 'art.reevs' },
+        { image: "/bullfinch.jpg",  description: 'art.illustration' },
+        { image: "/cardinal.jpg",  description: 'art.illustration' },
+        { image: "/fish.jpg",  description: 'art.illustration' },
+        { image: "/field.jpg",  description: 'art.illustration' },
+        { image: "/sprite.jpg",  description: 'art.sprite' },
+        { image: "/dwrf.jpg",  description: 'art.sprite' }
+    ]
 
     return (
         <Page>
-            <Header />
+            <Header translate={translate} changeLocale={changeLocale}/>
             <Content>
             <Paragraph>
-                Отлично владею CSS3, HTML5, современным стандартом JavaScript, а также библиотеками ReactJS, styled-components и многими другими.
+                { translate('art.header') }
             </Paragraph>
             {
                     projects.map(project => (
                         <Section>
-                            <Image src={project.image} onClick={() => setUrl(project.image)} />
+                            <Image src={ project.image } onClick={() => setUrl(project.image)} />
                             <Description>
-                                {project.description} 
+                                { translate(project.description) } 
                             </Description>
                         </Section>
                     ))

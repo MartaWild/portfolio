@@ -4,6 +4,7 @@ import styled, { keyframes }  from "styled-components";
 import Page from "../components/page";
 import Title from "../components/title";
 import SubTitle from "../components/subtitle";
+import useLocale from "../hooks/use-locale";
 
 const slideLeft = keyframes`
   0% {
@@ -34,36 +35,38 @@ const Section = styled.section`
 `;
 
 export default function Main(){
+    const [translate, locale, changeLocale] = useLocale();
+    
     return (
         <Page>
-            <Header />
+            <Header translate={translate} changeLocale={changeLocale}/>
             <Content>
                 <Title>
-                    Обо мне
+                    {translate('about.title')}
                 </Title>
                 <Section>
                     <SubTitle>
-                        Что я могу
+                        {translate('about.whatDo')}
                     </SubTitle>
                     <Paragraph> 
-                        Свободно владею такими графическими инструментами, как Adobe Photoshop, Adobe Illustrator, Paint Tool SAI 2.0
+                        {translate('art.header')}
                     </Paragraph>
                     <Paragraph>
-                        Отлично владею CSS3, HTML5, современным стандартом JavaScript, а также библиотеками ReactJS, styled-components и многими другими.
+                        {translate('web.header')}
                     </Paragraph>
                     <Paragraph>
-                        Также имею опыт работы с TypeScript, RxJS, Semantic UI и другими технологиями.
+                        {translate('about.alsoDo')}
                     </Paragraph>
                     <Paragraph>
-                        Родной язык - русский. Свободно владею английским.
+                        {translate('about.language')}
                     </Paragraph>
                 </Section>
                 <Section delay={"1s"}>
                     <SubTitle>
-                        Как со мной лучше связаться
+                        {translate('about.connect')}
                     </SubTitle>
                     <Paragraph>
-                        Сейчас я живу в России, работаю удалённо. Связаться можно по e-mail: &nbsp;
+                        {translate('about.contactInfo')} &nbsp;
                         <a href="mailto:if-so-girl865@mail.ru">
                             if-so-girl865@mail.ru
                         </a>
@@ -71,7 +74,7 @@ export default function Main(){
                 </Section>
                 <Section delay={"2s"}>
                     <SubTitle>
-                        Где ещё меня можно найти
+                        {translate('about.otherMedia')}
                     </SubTitle>
                     <Paragraph>
                         Instagram: &nbsp;
@@ -81,8 +84,6 @@ export default function Main(){
                     </Paragraph>
                 </Section>
             </Content>
-                
-
         </Page>
     )
 }
