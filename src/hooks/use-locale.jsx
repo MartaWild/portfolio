@@ -78,7 +78,7 @@ const i18n = {
 };
 
 export default function useLocale(){
-    const savedLocale = localStorage.getItem("locale");
+    const savedLocale = (typeof localStorage !== 'undefined') ? localStorage.getItem("locale") : undefined;
     const [locale, setLocale] = useState(savedLocale || 'ru');
 
     const changeLocale = () => {
