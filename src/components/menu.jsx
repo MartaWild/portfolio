@@ -71,6 +71,7 @@ const MenuButton = styled.div`
 
 export const Menu = (props) => {
     const { open, onSetOpen } = props;
+    const { translate, changeLocale } = props;
 
     return (
         <>
@@ -78,18 +79,18 @@ export const Menu = (props) => {
             <MenuPanel active={open}>
                 <MenuContent active={open}>
                     <MenuItem href="/">
-                        Главная
+                        { translate('header.itemMain') }
                     </MenuItem>
                     <MenuItem href="/web">
-                        Веб-разработка
+                        { translate('header.itemWeb') }
                     </MenuItem>
                     <MenuItem href="/art">
-                        Арт и дизайн
+                        { translate('header.itemArt') }
                     </MenuItem>
                     <MenuItem href="/about">
-                        О себе 
+                        { translate('header.about'  ) }
                     </MenuItem>
-                    <MenuItem href="/"> 
+                    <MenuItem href="#" onClick={() => changeLocale()}> 
                         Eng / Rus 
                     </MenuItem>                    
                 </MenuContent>

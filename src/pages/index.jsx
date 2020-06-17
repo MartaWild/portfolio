@@ -96,6 +96,7 @@ const MainText = styled.div`
 
 const Paragraph = styled.p`
     margin: 15px;
+    line-height: 1.6em;
 `;
 
 const Wrapper = styled.div`

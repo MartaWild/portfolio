@@ -20,6 +20,7 @@ const slideLeft = keyframes`
 const Paragraph = styled.p`
     margin: 15px;
     font-size: 20px;
+    line-height: 2em;
 `;
 
 const Content = styled.div`
@@ -31,7 +32,7 @@ const Content = styled.div`
 `;
 
 const Section = styled.section`
-    animation: ${slideLeft} 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) ${props => props.delay} both;
+    animation: ${slideLeft} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) ${props => props.delay} both;
 `;
 
 export default function Main(){
@@ -48,11 +49,11 @@ export default function Main(){
                     <SubTitle>
                         {translate('about.whatDo')}
                     </SubTitle>
-                    <Paragraph> 
-                        {translate('art.header')}
-                    </Paragraph>
                     <Paragraph>
                         {translate('web.header')}
+                    </Paragraph>
+                    <Paragraph> 
+                        {translate('art.header')}
                     </Paragraph>
                     <Paragraph>
                         {translate('about.alsoDo')}
@@ -61,7 +62,7 @@ export default function Main(){
                         {translate('about.language')}
                     </Paragraph>
                 </Section>
-                <Section delay={"1s"}>
+                <Section delay={"0.8s"}>
                     <SubTitle>
                         {translate('about.connect')}
                     </SubTitle>
@@ -72,7 +73,7 @@ export default function Main(){
                         </a>
                     </Paragraph>
                 </Section>
-                <Section delay={"2s"}>
+                <Section delay={"1.6s"}>
                     <SubTitle>
                         {translate('about.otherMedia')}
                     </SubTitle>

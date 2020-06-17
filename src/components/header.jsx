@@ -72,7 +72,12 @@ export default function Header(props){
 
     return (
         <HeaderBar>
-            <Menu open={menuOpen} onSetOpen={setMenuOpen} />
+            <Menu 
+                open={menuOpen}
+                onSetOpen={setMenuOpen}
+                translate={translate}
+                changeLocale={changeLocale}
+            />
             <LogoWrapper>
                 <a href="/">
                     <Image src="/icon.png" />

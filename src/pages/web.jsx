@@ -12,11 +12,16 @@ const Paragraph = styled.p`
     margin: 15px;
     width: 65%;
     padding: 10vh 0;
+    line-height: 2em;
 `;
 
 const Text = styled.p`
     margin-bottom: 15px;
     margin-top: 0;
+`;
+
+const TechText = styled(Text)`
+    opacity: 0.6;
 `;
 
 const Image = styled.img`
@@ -42,7 +47,7 @@ export default function Web() {
         { image: "/techcom.jpg", description: translate('techcom.description') , tech:  translate('techcom.tech')},
         { image: "/tabel.jpg" , description: translate('tabel.description'), tech: translate('tabel.tech')},
         { image: "/water.jpg", description: translate('water.description' ), tech: translate('water.tech' ), url: "https://water-check.herokuapp.com/" },
-        { image: "/date.jpg",  description: <> {translate('date.descrition')} <a href="https://thispersondoesnotexist.com">ThisPersionDoesNotExist</a>. </>, tech: translate('date.tech')}
+        { image: "/date.png",  description: <> {translate('date.descrition')} <a href="https://thispersondoesnotexist.com">ThisPersionDoesNotExist</a>. </>, tech: translate('date.tech')}
     ]
 
     return (
@@ -61,9 +66,9 @@ export default function Web() {
                                 <Text>
                                     {project.description} <br />
                                 </Text> 
-                                <Text>
+                                <TechText>
                                     {project.tech}
-                                </Text> 
+                                </TechText> 
                                 <a href={project.url}> 
                                     {project.url}
                                 </a>
