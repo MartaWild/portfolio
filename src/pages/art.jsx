@@ -8,7 +8,6 @@ import Description from "../components/description"
 import Lightbox from 'react-image-lightbox';
 import useLocale from "../hooks/use-locale";
 
-/*CSS*/
 const Paragraph = styled.p`
     margin: 15px;
     width: 65%;
@@ -35,13 +34,10 @@ export default function Art() {
         { image: "/logo.png" , description: 'art.logo' },
         { image: "/oct.jpg" , description: 'art.illustration' },
         { image: "/backgr.jpg", description: 'art.background' },
-        // { image: "/reeves.jpg", description: 'art.reevs' },
         { image: "/bullfinch.jpg",  description: 'art.illustration' },
         { image: "/cardinal.jpg",  description: 'art.illustration' },
         { image: "/fish.jpg",  description: 'art.illustration' },
         { image: "/field.jpg",  description: 'art.illustration' },
-        // { image: "/sprite.jpg",  description: 'art.sprite' },
-        // { image: "/dwrf.jpg",  description: 'art.sprite' }
     ]
 
     return (

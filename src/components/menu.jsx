@@ -11,7 +11,7 @@ const MenuPanel = styled.div`
     height: 100%;
     background: white;
     overflow: auto;
-    padding-top: /* menuButtonTop - half menu button height */calc(6vh - 23px);
+    padding-top: calc(6vh - 23px);
     transform: translate(${props => props.active ? '0' : '-100%'}, 0);
     transition: ${props => props.active
         ? `visibility 0s 0s, transform 0.3s ease-in-out`
@@ -58,7 +58,7 @@ const MenuOverlay = styled.div`
 
 const MenuButton = styled.div`
 	position: absolute;
-	/*top: 1%;*/
+
 	left: 23px;
     top: 20px;
 	width: ${props => props.theme.sidePadding};

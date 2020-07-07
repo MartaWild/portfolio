@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Menu } from "./menu";
 
-/*CSS*/
-
 const Image = styled.img`
     width: 100px;
 `;
@@ -18,7 +16,6 @@ const LogoWrapper = styled.div`
 const NavMenu = styled.nav`
     display: flex;
     width: 600px;
-    /*width: 30%;*/
     justify-content: space-between;
     margin-right: 100px;
     align-items: center;

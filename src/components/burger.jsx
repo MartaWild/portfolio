@@ -38,7 +38,7 @@ const BurgerInner = styled.div`
         border-radius: 4px;
         position: absolute;
         transition-property: transform;
-        transition-duration: 0.15s;   /**/
+        transition-duration: 0.15s;
         transition-timing-function: ease;
     }
 

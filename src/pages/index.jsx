@@ -5,7 +5,6 @@ import Page from "../components/page";
 import { useEffect } from "react";
 import useLocale from "../hooks/use-locale"
 
-/*CSS*/
 const slideLeft = keyframes`
   0% {
         transform: translateX(100px);
@@ -103,11 +102,6 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
 `;
-
-/*const SubText = styled.div`
-    font-size: 18px;
-    padding: 50px 0;
-`;*/
 
 export default function Main(){
     const [translate, locale, changeLocale] = useLocale();
