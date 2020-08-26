@@ -69,7 +69,7 @@ export default function Main(){
                     <Paragraph>
                         {translate('about.contactInfo')} &nbsp;
                         <a href="mailto:if-so-girl865@mail.ru">
-                            if-so-girl865@mail.ru
+                            levasheva95@mail.ru
                         </a>
                     </Paragraph>
                 </Section>

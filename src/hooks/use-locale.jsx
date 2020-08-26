@@ -79,10 +79,18 @@ const i18n = {
     }
 };
 
+function getBrowserLocale() {
+    if(typeof navigator !== "undefined"){
+        const userLang = navigator.language || navigator.userLanguage;
+        return userLang === 'ru-RU' ? 'ru' : 'en';
+    } else {
+        return 'en';
+    }
+}
+
 export default function useLocale(){
     const savedLocale = (typeof localStorage !== 'undefined') ? localStorage.getItem("locale") : undefined;
-    const [locale, setLocale] = useState(savedLocale || 'ru');
-
+    const [locale, setLocale] = useState(savedLocale || getBrowserLocale());
     const changeLocale = () => {
         const newLocale = locale === 'ru' ? 'en' : 'ru';
         setLocale(newLocale);
