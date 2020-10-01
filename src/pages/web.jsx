@@ -43,6 +43,7 @@ export default function Web() {
     const [urlImage, setUrl] = React.useState(null);
 
     const projects = [
+        { image: "/todos.jpg", description: translate('todos.description'), tech: translate('todos.tech'),  url: "https://martas-todo-list.herokuapp.com"},
         { image: "/portfolio.jpg", description: translate('portfolio.description'), tech: translate('portfolio.tech')},
         { image: "/techcom.jpg", description: translate('techcom.description') , tech:  translate('techcom.tech')},
         { image: "/tabel.jpg" , description: translate('tabel.description'), tech: translate('tabel.tech')},

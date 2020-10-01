@@ -22,6 +22,8 @@ const i18n = {
         'water.tech'            : 'Технологии: JavaScript, React',
         'date.descrition'       : 'Сервис-пародия на Tinder со случайной генерацией профилей. Для фотографий использовались изображения с',
         'date.tech'             : 'Технологии: JavaScript, React, Chance.js',
+        'todos.description'     : 'Веб-приложение для ведения задач. Разные режимы просмотра, drag&drop, хранение данных в БД',
+        'todos.tech'            : 'Технологии: TypeScript, React + Redux + Thunk, react-beautiful-dnd, SQLite, NodeJS, Express.js',
 
         'art.header'            : 'Свободно владею такими графическими инструментами, как Adobe Photoshop, Adobe Illustrator, Paint Tool SAI 2.0',
         'art.soap'              : 'Логотип для магазина декоративного мыла',
@@ -60,6 +62,8 @@ const i18n = {
         'water.tech'            : 'Tech: JavaScript, React, Notifications API',
         'date.descrition'       : 'A Tinder parody with randomly generated user profiles. For photos I used images from ',
         'date.tech'             : 'Tech: JavaScript, React, Chance.js',
+        'todos.description'     : 'Web application for task management. Different view modes, drag & drop, data storage in DB',
+        'todos.tech'            : 'Tech: TypeScript, React + Redux + Thunk, react-beautiful-dnd, SQLite, NodeJS, Express.js',
 
         'art.header'            : 'I am well versed in such tools as Adobe Photoshop, Adobe Illustrator, Paint Tool SAI 2.0',
         'art.soap'              : 'Logo for a decorative soap store',
